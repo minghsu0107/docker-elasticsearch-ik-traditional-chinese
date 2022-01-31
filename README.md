@@ -55,7 +55,7 @@ curl -XPOST http://localhost:9200/index0/_search  -H 'Content-Type:application/j
 '
 ```
 ## Test Traditional Chinese
-create an index:
+Create an index:
 ```bash
 curl -XPUT http://localhost:9200/index1
 ```
@@ -88,7 +88,7 @@ curl -XPOST http://localhost:9200/index1/_create/4 -H 'Content-Type:application/
 {"content":"被視為判斷美國經濟是否走向衰退的另一指標「露營車」出貨量也明顯下滑"}
 '
 ```
-Query:
+Query with highlighting:
 ```bash
 curl -XPOST http://localhost:9200/index1/_search  -H 'Content-Type:application/json' -d'
 {
