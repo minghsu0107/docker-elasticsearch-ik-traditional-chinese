@@ -1,6 +1,8 @@
 
 # Docker for Elasticsearch with IK Analyzer and Traditional Chinese
 It is such a pain to configure IK Analyzer for Traditional Chinese. Thus, this repository provides a properly configured Docker image for Elasticsearch with IK Analysis plugin and Traditional Chinese dictionaries.
+
+The image uses Elasticsearch version `7.16.2`.
 ## Usage
 ```bash
 docker run --rm -p 9200:9200 -e "discovery.type=single-node" --memory 5G minghsu0107/elasticsearch-chinese:7.16.2
